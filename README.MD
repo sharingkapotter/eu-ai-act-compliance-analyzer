@@ -148,10 +148,10 @@ The dashboard will open automatically at `http://localhost:8501`
 
 ## 👤 About
 
-Built by **[Your Name]** as part of an AI Governance & Risk portfolio.
+Built by **Sunil Sodhi** as part of an AI Governance & Risk portfolio.
 
-- 🔗 LinkedIn: [your-linkedin]
-- 📧 Email: [your-email]
+- 🔗 LinkedIn: https://www.linkedin.com/in/sunil-sodhi-30901a81/
+- 📧 Email: sunilsoftwareqa@gmail.com
 - 20 years of SDET experience transitioning into **AI Governance, Risk & Security**
 
 ---
