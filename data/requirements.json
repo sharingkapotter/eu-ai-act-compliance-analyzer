@@ -1,0 +1,162 @@
+{
+  "ai_system": {
+    "name": "Resume Screening Tool",
+    "version": "1.0",
+    "vendor": "HireAI Corp",
+    "classification": "High-Risk",
+    "eu_ai_act_category": "Annex III - Employment and Workers Management",
+    "description": "Automated resume screening tool that ranks and filters job applicants using ML algorithms"
+  },
+  "requirements": [
+    {
+      "id": "REQ-001",
+      "article": "Article 9",
+      "title": "Risk Management System",
+      "category": "Risk Management",
+      "description": "A risk management system shall be established, implemented, documented and maintained throughout the entire lifecycle of the high-risk AI system.",
+      "mandatory": true,
+      "controls": [
+        "Documented risk management process",
+        "Risk identification and analysis procedures",
+        "Risk mitigation measures",
+        "Residual risk evaluation",
+        "Regular risk management reviews"
+      ]
+    },
+    {
+      "id": "REQ-002",
+      "article": "Article 10",
+      "title": "Data and Data Governance",
+      "category": "Data Governance",
+      "description": "Training, validation and testing data shall meet quality criteria and be relevant, representative, free of errors and complete.",
+      "mandatory": true,
+      "controls": [
+        "Data quality assessment process",
+        "Bias detection in training data",
+        "Data lineage documentation",
+        "Demographic representation analysis",
+        "Data validation and testing procedures"
+      ]
+    },
+    {
+      "id": "REQ-003",
+      "article": "Article 11",
+      "title": "Technical Documentation",
+      "category": "Documentation",
+      "description": "Technical documentation shall be drawn up before the high-risk AI system is placed on the market or put into service.",
+      "mandatory": true,
+      "controls": [
+        "System architecture documentation",
+        "Model cards and datasheets",
+        "Intended purpose documentation",
+        "Performance metrics documentation",
+        "Known limitations documentation"
+      ]
+    },
+    {
+      "id": "REQ-004",
+      "article": "Article 12",
+      "title": "Record-Keeping and Logging",
+      "category": "Audit & Logging",
+      "description": "High-risk AI systems shall be designed to automatically log events throughout their lifetime.",
+      "mandatory": true,
+      "controls": [
+        "Automated event logging",
+        "Log retention policy (minimum 6 months)",
+        "Decision audit trail",
+        "Access logs for system interactions",
+        "Anomaly detection logging"
+      ]
+    },
+    {
+      "id": "REQ-005",
+      "article": "Article 13",
+      "title": "Transparency and Information Provision",
+      "category": "Transparency",
+      "description": "High-risk AI systems shall be designed to ensure sufficient transparency to enable users to interpret the system output and use it appropriately.",
+      "mandatory": true,
+      "controls": [
+        "Explainability of decisions",
+        "User-facing transparency notices",
+        "Output confidence scores provided",
+        "Limitations clearly communicated",
+        "Instructions for use documentation"
+      ]
+    },
+    {
+      "id": "REQ-006",
+      "article": "Article 14",
+      "title": "Human Oversight",
+      "category": "Human Oversight",
+      "description": "High-risk AI systems shall be designed to be effectively overseen by natural persons during the period in which the AI system is in use.",
+      "mandatory": true,
+      "controls": [
+        "Human review process for AI decisions",
+        "Override mechanism for automated decisions",
+        "Escalation procedures defined",
+        "Human oversight training program",
+        "Stop/pause functionality implemented"
+      ]
+    },
+    {
+      "id": "REQ-007",
+      "article": "Article 15",
+      "title": "Accuracy, Robustness and Cybersecurity",
+      "category": "Technical Robustness",
+      "description": "High-risk AI systems shall be designed to achieve appropriate levels of accuracy, robustness, and cybersecurity.",
+      "mandatory": true,
+      "controls": [
+        "Accuracy benchmarks established",
+        "Adversarial testing performed",
+        "Cybersecurity risk assessment",
+        "Model performance monitoring",
+        "Fallback procedures documented"
+      ]
+    },
+    {
+      "id": "REQ-008",
+      "article": "Article 16",
+      "title": "Obligations of Providers",
+      "category": "Governance",
+      "description": "Providers of high-risk AI systems shall register the system in the EU database and implement a quality management system.",
+      "mandatory": true,
+      "controls": [
+        "EU database registration",
+        "Quality management system (QMS)",
+        "Conformity assessment completed",
+        "CE marking applied",
+        "Authorized representative appointed (if non-EU)"
+      ]
+    },
+    {
+      "id": "REQ-009",
+      "article": "Article 29",
+      "title": "Obligations of Deployers",
+      "category": "Governance",
+      "description": "Deployers of high-risk AI systems shall take appropriate technical and organisational measures to ensure they use such systems as intended.",
+      "mandatory": true,
+      "controls": [
+        "Use case within intended purpose",
+        "Staff competency and training",
+        "Data protection impact assessment (DPIA)",
+        "Fundamental rights impact assessment",
+        "Incident reporting process"
+      ]
+    },
+    {
+      "id": "REQ-010",
+      "article": "Article 72",
+      "title": "Post-Market Monitoring",
+      "category": "Monitoring",
+      "description": "Providers shall establish a post-market monitoring system to collect and review experience gained from high-risk AI systems.",
+      "mandatory": true,
+      "controls": [
+        "Continuous performance monitoring",
+        "Bias drift detection",
+        "User feedback collection mechanism",
+        "Incident reporting to authorities",
+        "Regular model revalidation schedule"
+      ]
+    }
+  ]
+}

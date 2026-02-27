@@ -1,0 +1,213 @@
+{
+  "assessment_metadata": {
+    "assessment_date": "2026-02-27",
+    "assessor": "AI Governance Analyst",
+    "system_name": "Resume Screening Tool",
+    "version_assessed": "1.0",
+    "next_review_date": "2026-08-27",
+    "overall_status": "Non-Compliant"
+  },
+  "compliance_scores": [
+    {
+      "req_id": "REQ-001",
+      "title": "Risk Management System",
+      "category": "Risk Management",
+      "article": "Article 9",
+      "score": 30,
+      "status": "Non-Compliant",
+      "severity": "Critical",
+      "findings": [
+        "No formal risk management process documented",
+        "Risk identification performed ad-hoc only",
+        "No residual risk evaluation exists",
+        "No lifecycle risk review schedule"
+      ],
+      "evidence_available": [
+        "Informal risk notes in Confluence"
+      ],
+      "gap_description": "The organization has no structured risk management system. Informal notes exist but do not meet Article 9 requirements for a documented, maintained lifecycle process."
+    },
+    {
+      "req_id": "REQ-002",
+      "title": "Data and Data Governance",
+      "category": "Data Governance",
+      "article": "Article 10",
+      "score": 25,
+      "status": "Non-Compliant",
+      "severity": "Critical",
+      "findings": [
+        "Training data has no demographic representation analysis",
+        "No bias detection process in place",
+        "Data lineage is undocumented",
+        "No formal data validation testing"
+      ],
+      "evidence_available": [
+        "Raw training dataset exists",
+        "Basic data schema documented"
+      ],
+      "gap_description": "Training data lacks bias analysis and demographic representation checks. No data governance framework exists. High risk of discriminatory outcomes in hiring decisions."
+    },
+    {
+      "req_id": "REQ-003",
+      "title": "Technical Documentation",
+      "category": "Documentation",
+      "article": "Article 11",
+      "score": 50,
+      "status": "Partial",
+      "severity": "High",
+      "findings": [
+        "System architecture documented but outdated",
+        "No model card exists",
+        "Performance metrics partially documented",
+        "Known limitations not formally documented"
+      ],
+      "evidence_available": [
+        "Architecture diagram (18 months old)",
+        "Some API documentation"
+      ],
+      "gap_description": "Partial documentation exists but is outdated and incomplete. Model cards and limitation disclosures are missing entirely."
+    },
+    {
+      "req_id": "REQ-004",
+      "title": "Record-Keeping and Logging",
+      "category": "Audit & Logging",
+      "article": "Article 12",
+      "score": 40,
+      "status": "Non-Compliant",
+      "severity": "High",
+      "findings": [
+        "Basic application logs exist but no decision audit trail",
+        "Log retention policy is 30 days (minimum required: 6 months)",
+        "No anomaly detection in logging",
+        "Access logs incomplete"
+      ],
+      "evidence_available": [
+        "Application error logs",
+        "Basic access logs"
+      ],
+      "gap_description": "Logging infrastructure exists but does not capture decision-level audit trails. Retention period is far below the required minimum."
+    },
+    {
+      "req_id": "REQ-005",
+      "title": "Transparency and Information Provision",
+      "category": "Transparency",
+      "article": "Article 13",
+      "score": 20,
+      "status": "Non-Compliant",
+      "severity": "Critical",
+      "findings": [
+        "No explainability of screening decisions provided to candidates",
+        "No transparency notice to job applicants",
+        "Confidence scores not exposed to recruiters",
+        "No instructions for use documentation"
+      ],
+      "evidence_available": [],
+      "gap_description": "Candidates are not informed that AI is being used in screening. No explainability features exist. This is a fundamental rights concern under GDPR and EU AI Act."
+    },
+    {
+      "req_id": "REQ-006",
+      "title": "Human Oversight",
+      "category": "Human Oversight",
+      "article": "Article 14",
+      "score": 55,
+      "status": "Partial",
+      "severity": "High",
+      "findings": [
+        "Recruiters can manually review candidates but process is not enforced",
+        "No formal override mechanism documented",
+        "No human oversight training program exists",
+        "Escalation procedures undefined"
+      ],
+      "evidence_available": [
+        "Recruiter UI allows manual review",
+        "Some informal override capability"
+      ],
+      "gap_description": "Human review capability exists in the UI but is not enforced or documented as a formal control. No training ensures reviewers understand AI limitations."
+    },
+    {
+      "req_id": "REQ-007",
+      "title": "Accuracy, Robustness and Cybersecurity",
+      "category": "Technical Robustness",
+      "article": "Article 15",
+      "score": 45,
+      "status": "Partial",
+      "severity": "High",
+      "findings": [
+        "Accuracy benchmarks exist but not formally approved",
+        "No adversarial testing has been performed",
+        "Cybersecurity assessment is 2 years old",
+        "No fallback procedures if model fails"
+      ],
+      "evidence_available": [
+        "Model accuracy report (internal)",
+        "Old penetration test report"
+      ],
+      "gap_description": "Some accuracy metrics exist but adversarial robustness and current cybersecurity posture are unvalidated. No fallback plan if the model produces erroneous output."
+    },
+    {
+      "req_id": "REQ-008",
+      "title": "Obligations of Providers",
+      "category": "Governance",
+      "article": "Article 16",
+      "score": 10,
+      "status": "Non-Compliant",
+      "severity": "Critical",
+      "findings": [
+        "Not registered in EU AI database",
+        "No quality management system in place",
+        "Conformity assessment not performed",
+        "CE marking not applied",
+        "No authorized EU representative appointed"
+      ],
+      "evidence_available": [],
+      "gap_description": "No formal provider obligations have been met. This system cannot legally operate in the EU market in its current state."
+    },
+    {
+      "req_id": "REQ-009",
+      "title": "Obligations of Deployers",
+      "category": "Governance",
+      "article": "Article 29",
+      "score": 35,
+      "status": "Non-Compliant",
+      "severity": "Critical",
+      "findings": [
+        "No Data Protection Impact Assessment (DPIA) completed",
+        "No Fundamental Rights Impact Assessment performed",
+        "Staff AI literacy training not conducted",
+        "No incident reporting process defined"
+      ],
+      "evidence_available": [
+        "Basic privacy policy exists"
+      ],
+      "gap_description": "Deployer obligations largely unmet. DPIAs and fundamental rights assessments are missing, creating significant legal exposure."
+    },
+    {
+      "req_id": "REQ-010",
+      "title": "Post-Market Monitoring",
+      "category": "Monitoring",
+      "article": "Article 72",
+      "score": 15,
+      "status": "Non-Compliant",
+      "severity": "Critical",
+      "findings": [
+        "No post-market monitoring plan exists",
+        "No bias drift detection in production",
+        "No user feedback mechanism",
+        "No model revalidation schedule"
+      ],
+      "evidence_available": [
+        "Ad-hoc performance reviews occasionally performed"
+      ],
+      "gap_description": "No structured monitoring exists post-deployment. The system has no mechanism to detect performance degradation or emerging bias in production."
+    }
+  ],
+  "summary": {
+    "total_requirements": 10,
+    "compliant": 0,
+    "partial": 3,
+    "non_compliant": 7,
+    "critical_gaps": 6,
+    "high_gaps": 4,
+    "overall_score": 32.5
+  }
+}

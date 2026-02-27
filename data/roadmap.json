@@ -1,0 +1,239 @@
+{
+  "roadmap_metadata": {
+    "created_date": "2026-02-27",
+    "system_name": "Resume Screening Tool",
+    "target_compliance_date": "2027-02-27",
+    "total_duration_months": 12,
+    "total_estimated_cost": "$285,000 - $420,000"
+  },
+  "phases": [
+    {
+      "phase_number": 1,
+      "title": "Emergency Controls & Quick Wins",
+      "duration": "Month 1-2",
+      "priority": "Critical",
+      "estimated_cost": "$25,000 - $40,000",
+      "target_score_improvement": "32% → 50%",
+      "description": "Address the most critical legal and ethical risks immediately to reduce exposure",
+      "tasks": [
+        {
+          "id": "TASK-001",
+          "req_id": "REQ-005",
+          "title": "Add Candidate Transparency Notice",
+          "description": "Add clear notice to job application forms informing candidates that AI screening is used",
+          "effort": "Low",
+          "duration_weeks": 1,
+          "owner": "Legal + Engineering",
+          "deliverable": "Updated application form with AI disclosure notice",
+          "priority": "Critical"
+        },
+        {
+          "id": "TASK-002",
+          "req_id": "REQ-004",
+          "title": "Extend Log Retention to 6 Months",
+          "description": "Update logging infrastructure to retain decision logs for minimum 6 months",
+          "effort": "Low",
+          "duration_weeks": 2,
+          "owner": "Engineering",
+          "deliverable": "Updated log retention policy and infrastructure config",
+          "priority": "Critical"
+        },
+        {
+          "id": "TASK-003",
+          "req_id": "REQ-006",
+          "title": "Formalize Human Override Process",
+          "description": "Document and enforce mandatory human review step before any candidate rejection",
+          "effort": "Medium",
+          "duration_weeks": 3,
+          "owner": "HR + Engineering",
+          "deliverable": "Formal SOP for human oversight of AI screening decisions",
+          "priority": "Critical"
+        },
+        {
+          "id": "TASK-004",
+          "req_id": "REQ-001",
+          "title": "Initiate Risk Management Framework",
+          "description": "Establish a basic risk register and assign a risk owner for the AI system",
+          "effort": "Medium",
+          "duration_weeks": 4,
+          "owner": "Governance Team",
+          "deliverable": "Risk register, risk owner assigned, initial risk assessment",
+          "priority": "Critical"
+        }
+      ]
+    },
+    {
+      "phase_number": 2,
+      "title": "Data Governance & Documentation",
+      "duration": "Month 3-5",
+      "priority": "High",
+      "estimated_cost": "$60,000 - $90,000",
+      "target_score_improvement": "50% → 65%",
+      "description": "Build the data governance foundation and complete required technical documentation",
+      "tasks": [
+        {
+          "id": "TASK-005",
+          "req_id": "REQ-002",
+          "title": "Conduct Bias Audit on Training Data",
+          "description": "Hire third-party auditor to assess demographic representation and bias in training dataset",
+          "effort": "High",
+          "duration_weeks": 6,
+          "owner": "Data Science + External Auditor",
+          "deliverable": "Bias audit report with remediation recommendations",
+          "priority": "Critical"
+        },
+        {
+          "id": "TASK-006",
+          "req_id": "REQ-002",
+          "title": "Implement Data Lineage Tracking",
+          "description": "Document and automate tracking of all training data sources and transformations",
+          "effort": "Medium",
+          "duration_weeks": 4,
+          "owner": "Data Engineering",
+          "deliverable": "Data lineage map and automated tracking system",
+          "priority": "High"
+        },
+        {
+          "id": "TASK-007",
+          "req_id": "REQ-003",
+          "title": "Create Model Card and System Documentation",
+          "description": "Produce complete model card, updated architecture docs, and known limitations register",
+          "effort": "Medium",
+          "duration_weeks": 3,
+          "owner": "ML Engineering + Technical Writer",
+          "deliverable": "Model card, architecture document, limitations register",
+          "priority": "High"
+        },
+        {
+          "id": "TASK-008",
+          "req_id": "REQ-009",
+          "title": "Complete DPIA and Fundamental Rights Assessment",
+          "description": "Conduct Data Protection Impact Assessment and Fundamental Rights Impact Assessment",
+          "effort": "High",
+          "duration_weeks": 5,
+          "owner": "Legal + DPO",
+          "deliverable": "DPIA report, Fundamental Rights Impact Assessment report",
+          "priority": "Critical"
+        }
+      ]
+    },
+    {
+      "phase_number": 3,
+      "title": "Technical Controls & Robustness",
+      "duration": "Month 6-8",
+      "priority": "High",
+      "estimated_cost": "$80,000 - $120,000",
+      "target_score_improvement": "65% → 80%",
+      "description": "Implement technical safeguards including explainability, monitoring and security",
+      "tasks": [
+        {
+          "id": "TASK-009",
+          "req_id": "REQ-005",
+          "title": "Implement Explainability Features",
+          "description": "Integrate SHAP or LIME to provide human-readable explanations for screening decisions",
+          "effort": "High",
+          "duration_weeks": 6,
+          "owner": "ML Engineering",
+          "deliverable": "Explainability module integrated into screening pipeline",
+          "priority": "High"
+        },
+        {
+          "id": "TASK-010",
+          "req_id": "REQ-007",
+          "title": "Perform Adversarial Testing",
+          "description": "Conduct adversarial robustness testing to identify model manipulation vulnerabilities",
+          "effort": "High",
+          "duration_weeks": 4,
+          "owner": "Security + ML Engineering",
+          "deliverable": "Adversarial testing report with remediation actions",
+          "priority": "High"
+        },
+        {
+          "id": "TASK-011",
+          "req_id": "REQ-004",
+          "title": "Implement Decision Audit Trail",
+          "description": "Build structured logging of every screening decision with inputs, outputs and confidence scores",
+          "effort": "High",
+          "duration_weeks": 5,
+          "owner": "Engineering",
+          "deliverable": "Decision audit trail system with searchable log interface",
+          "priority": "High"
+        },
+        {
+          "id": "TASK-012",
+          "req_id": "REQ-007",
+          "title": "Update Cybersecurity Assessment",
+          "description": "Commission fresh penetration test and cybersecurity risk assessment for the AI system",
+          "effort": "Medium",
+          "duration_weeks": 3,
+          "owner": "Security Team + External Vendor",
+          "deliverable": "Updated penetration test report and remediation plan",
+          "priority": "High"
+        }
+      ]
+    },
+    {
+      "phase_number": 4,
+      "title": "Governance, Registration & Monitoring",
+      "duration": "Month 9-12",
+      "priority": "Medium",
+      "estimated_cost": "$120,000 - $170,000",
+      "target_score_improvement": "80% → 95%",
+      "description": "Complete formal governance obligations, EU registration, and establish ongoing monitoring",
+      "tasks": [
+        {
+          "id": "TASK-013",
+          "req_id": "REQ-008",
+          "title": "Complete Conformity Assessment",
+          "description": "Engage notified body to perform conformity assessment and obtain CE marking",
+          "effort": "High",
+          "duration_weeks": 8,
+          "owner": "Compliance + Legal",
+          "deliverable": "Conformity assessment certificate, CE marking applied",
+          "priority": "Critical"
+        },
+        {
+          "id": "TASK-014",
+          "req_id": "REQ-008",
+          "title": "Register in EU AI Database",
+          "description": "Submit system registration to the EU AI Act public database",
+          "effort": "Low",
+          "duration_weeks": 2,
+          "owner": "Compliance Team",
+          "deliverable": "EU database registration confirmation",
+          "priority": "Critical"
+        },
+        {
+          "id": "TASK-015",
+          "req_id": "REQ-010",
+          "title": "Deploy Post-Market Monitoring System",
+          "description": "Implement automated monitoring for bias drift, accuracy degradation and anomaly detection",
+          "effort": "High",
+          "duration_weeks": 6,
+          "owner": "ML Engineering + Data Science",
+          "deliverable": "Monitoring dashboard with alerting and monthly reporting",
+          "priority": "High"
+        },
+        {
+          "id": "TASK-016",
+          "req_id": "REQ-009",
+          "title": "Deliver AI Literacy Training to Staff",
+          "description": "Design and deliver mandatory AI literacy and oversight training for all recruiters and HR staff",
+          "effort": "Medium",
+          "duration_weeks": 4,
+          "owner": "HR + Governance Team",
+          "deliverable": "Training program, completion records, competency assessments",
+          "priority": "High"
+        }
+      ]
+    }
+  ],
+  "summary": {
+    "total_tasks": 16,
+    "critical_tasks": 8,
+    "high_tasks": 8,
+    "total_phases": 4,
+    "projected_final_score": 95,
+    "starting_score": 32.5
+  }
+}
