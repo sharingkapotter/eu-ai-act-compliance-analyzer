@@ -165,3 +165,5 @@ MIT License — feel free to fork and adapt for your own compliance use cases.
 ## ⚠️ Disclaimer
 
 This tool is for educational and portfolio demonstration purposes. It does not constitute legal advice. Always consult qualified legal counsel for actual EU AI Act compliance assessments.
+
+Build with Claude AI
