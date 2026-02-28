@@ -32,14 +32,23 @@ def create_gantt_chart():
     data = load_roadmap()
     
     tasks = []
+    
+    phase_dates = {
+        1: ("2026-02-01", "2026-04-30"),
+        2: ("2026-05-01", "2026-07-31"),
+        3: ("2026-08-01", "2026-10-31"),
+        4: ("2026-11-01", "2027-02-28"),
+    }
+    
     for phase in data["phases"]:
         phase_num = phase["phase_number"]
+        start_date, end_date = phase_dates[phase_num]
         for task in phase["tasks"]:
             tasks.append({
                 "Task": task["title"],
                 "Phase": f"Phase {phase_num}: {phase['title']}",
-                "Start": f"2026-0{max(1, (phase_num-1)*3+1):02d}-01",
-                "Finish": f"2026-{min(12, phase_num*3):02d}-28",
+                "Start": start_date,
+                "Finish": end_date,
                 "Priority": task["priority"],
                 "Owner": task["owner"],
                 "Effort": task["effort"],
@@ -52,9 +61,9 @@ def create_gantt_chart():
 
     color_map = {
         "Critical": "#FF4444",
-        "High": "#FF8C00",
-        "Medium": "#4169E1",
-        "Low": "#32CD32"
+        "High":     "#FF8C00",
+        "Medium":   "#4169E1",
+        "Low":      "#32CD32"
     }
 
     fig = px.timeline(
